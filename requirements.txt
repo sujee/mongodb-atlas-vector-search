@@ -7,4 +7,6 @@ matplotlib
 seaborn
 ipykernel
 
+pymongo[srv]
+
 # jupyterlab
