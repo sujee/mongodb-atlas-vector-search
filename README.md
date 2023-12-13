@@ -11,8 +11,8 @@ Follow [setup-atlas.md](setup-atlas.md)
 Run this on Colab : 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sujee/mongodb-atlas-vector-search/)
 
-* Setup your local machine : [setup.md](setup.md)
+* If you are planning to run this on your computer, setup your local machine : [setup.md](setup.md)
 
-## Step-3: Check OpenAI API
+## Step-3: Check OpenAI API Access
 
-Run this notebook: [test-openai.ipynb](test-openai.ipynb)
+Run this notebook: [test-openai.ipynb](test-openai.ipynb) to verify your access key works.
