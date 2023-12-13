@@ -12,7 +12,7 @@ Login to your account
 - Choose 'FREE' tier
 - Follow the guide.
 - Note your username and password to connect to the instance
-- Also add your public-ip to acces list.  This is necessary to accesss the cluster
+- Also **add your public-ip to acces list**.  This is necessary to accesss the cluster
 
 
 ## Step-3: Load Sample Data
