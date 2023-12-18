@@ -2,16 +2,31 @@
 
 ## About
 
-Generative-AI and LLMs are making all kinds of innovations possible.  "Semantic Seasrch" is one of the applications.  Semantic Search allows us to search by context and meaning instead of simply by keywords.
+**TLDR; How to do vector search using Mongo Atlas?**  Skip to the [fun part below](#the-fun-part) if you are curiuos.
+
+Semantic Search allows us to search by context and meaning instead of simply by keywords.
+
+For example, let's say we are searching movie plots.
+
+- A simple **keyword search** could be searching by **'sci-fi'**
+- A **semantic search** could be **'where humans fight aliens'**
 
 For doing semantic search, we need to convert text into  embeddings (vector of numbers).  We also need datastores that can store embeddings or vectors efficiently.  There are many [vector stores](https://aws.amazon.com/what-is/vector-databases/) coming up.  The very popular document datastore [MongoDB](https://www.mongodb.com/) now offers [Mongo Atlas](https://www.mongodb.com/atlas) that supports vector storage and search natively.
 
 This tutorial demonstrates:
--  how to setup Mongo Atlas
+
+- how to setup Mongo Atlas
 - how to setup vector embeddings and index them
 - and how to query them
 
-You can run this tutorial with a **free Mongo Atlas account!**
+You will need:
+
+- Mongo Atlas account (free)
+- and OpenAI API Key (paid)
+
+## Architecture
+
+![architecture](images/architecture-1.svg)
 
 ### The Fun Part
 
