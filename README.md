@@ -81,3 +81,15 @@ Run this notebook: [test-openai.ipynb](test-openai.ipynb) to verify your access 
 ## Step-4: Query Atlas DB
 
 [query-atlas.ipynb](query-atlas.ipynb)
+
+## Step-5: Streamlit UI
+
+You can fireup Streamlit UI like this:
+
+```bash
+streamlit  run  streamlit-app.py
+```
+
+This will open a browser UI at http://localhost:8501
+
+![](images/streamlit-ui1.png)

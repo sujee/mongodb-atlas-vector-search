@@ -1,12 +1,7 @@
 openai
 python-dotenv==1.0.0
-
-pandas
-scikit-learn
-matplotlib
-seaborn
-ipykernel
-
 pymongo[srv]
+streamlit
 
-# jupyterlab
+## Utils
+ipykernel
