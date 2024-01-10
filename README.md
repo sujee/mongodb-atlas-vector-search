@@ -68,14 +68,11 @@ Follow these steps to get this going.
 
 Follow [setup-atlas.md](setup-atlas.md)
 
+Also [set up index on Atlas](setup-atlas-index.md)
+
 ## Step-2: Setup Python Environment
 
-* If you are running on Google Colab, no setup required!  Simply click on 'run on colab' icon on notebooks to run
-
-Run this on Colab : 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/sujee/mongodb-atlas-vector-search/)
-
-* If you are planning to run this on your computer, setup your local machine : [setup.md](setup.md)
+Follow [setup.md](setup.md)
 
 ## Step-3: Check OpenAI API Access
 
