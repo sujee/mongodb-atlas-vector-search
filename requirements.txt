@@ -3,5 +3,12 @@ python-dotenv==1.0.0
 pymongo[srv]
 streamlit
 
+
+## Embeddings
+llama-index
+transformers
+torch
+sentence_transformers
+
 ## Utils
 ipykernel
