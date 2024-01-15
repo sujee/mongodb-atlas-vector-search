@@ -7,8 +7,9 @@ Have a python (preferrably Anaconda environment) environment
 ## Step-1: Setup Python Env
 
 ```bash
-# need python 3.10 for torch libraries
-conda create -n atlas-1 -y python=3.10
+# need python 3.11 for torch libraries
+conda create -n atlas-1 -y python=3.11
+# activate the new conda environment
 conda activate atlas-1
 # make sure env is swithced to atlas-1
 ```
@@ -17,6 +18,7 @@ install all needed packages
 
 ```bash
 pip install -r requirements.txt
+
 ipython kernel install --user --name=atlas-1 
 ```
 

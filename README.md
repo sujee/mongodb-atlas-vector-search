@@ -72,7 +72,7 @@ Also [set up index on Atlas](setup-atlas-index.md)
 
 ## Step-2: Setup Python Environment
 
-Follow [setup.md](setup.md)
+Follow [setup-python-env.md](setup-python-env.md)
 
 ## Step-3: Check OpenAI API Access
 
