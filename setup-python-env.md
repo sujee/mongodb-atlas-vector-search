@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ipython kernel install --user --name=atlas-1 
 ```
 
-To manage kernels
+### (Optional) to manage kernels
 
 ```bash
 jupyter kernelspec list
