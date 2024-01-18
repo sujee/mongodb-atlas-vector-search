@@ -2,7 +2,9 @@
 
 ## Pre-reqs
 
-Have a python (preferrably Anaconda environment) environment
+This assumes you have a working [Anaconda Python environmen](https://www.anaconda.com) setup.
+
+You can install it by following the [guide here](https://www.anaconda.com/download/).
 
 ## Step-1: Setup Python Env
 

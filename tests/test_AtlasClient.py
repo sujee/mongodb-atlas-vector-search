@@ -19,13 +19,9 @@ config = dotenv_values(find_dotenv())
 
 ATLAS_URI = config.get('ATLAS_URI')
 DB_NAME = config.get ('DB_NAME')
-OPENAI_API_KEY = config.get("OPENAI_API_KEY")
 
 if not ATLAS_URI:
     raise Exception ("'ATLAS_URI' is not set.  Please set it above to continue...")
-
-if not OPENAI_API_KEY:
-    raise Exception ("'OPENAI_API_KEY' is not set.  Please set it above to continue...")
 
 DB_NAME = 'sample_mflix'
 COLLECTION_NAME = 'embedded_movies'

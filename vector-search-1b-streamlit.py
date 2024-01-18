@@ -3,6 +3,7 @@ from AtlasClient import AtlasClient
 from OpenAIClient import OpenAIClient
 from dotenv import find_dotenv, dotenv_values
 from urllib.request import urlopen
+import time
 
 DB_NAME = 'sample_mflix'
 COLLECTION_NAME = 'embedded_movies'
@@ -42,11 +43,15 @@ def run_query (query, output_container):
     with output_container.container():
         st.write (f'running query : {query}')
 
+        t1a = time.perf_counter()
         embedding = openAI_client.get_embedding(query)
-        st.write (f"Got embeddings:  {embedding [:5]} ...")
+        t1b = time.perf_counter()
+        st.write (f"Got embeddings from openAI API in {(t1b-t1a)*1000:,.0f} ms ({embedding [:5]} ...)")
 
+        t2a = time.perf_counter()
         movies = atlas_client.vector_search(collection_name=COLLECTION_NAME, index_name=INDEX_NAME, attr_name='plot_embedding', embedding_vector=embedding,limit=10 )
-        st.write (f"Found {len (movies)} movies")
+        t2b = time.perf_counter()
+        st.write (f"Altas query returned {len (movies)} movies in {(t2b-t2a)*1000:,.0f} ms")
         for idx, movie in enumerate (movies):
             md_str =  (f"""
 - Movie {idx+1}

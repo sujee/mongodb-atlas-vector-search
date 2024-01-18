@@ -13,7 +13,7 @@ For example, let's say we are searching movie plots.
 
 For doing semantic search, we need to convert text into  embeddings (vector of numbers).  We also need datastores that can store embeddings or vectors efficiently.  There are many [vector stores](https://aws.amazon.com/what-is/vector-databases/) coming up.  The very popular document datastore [MongoDB](https://www.mongodb.com/) now offers [Mongo Atlas](https://www.mongodb.com/atlas) that supports vector storage and search natively.
 
-This tutorial demonstrates:
+This workshop demonstrates:
 
 - how to setup Mongo Atlas
 - how to setup vector embeddings and index them
@@ -21,12 +21,9 @@ This tutorial demonstrates:
 
 You will need:
 
+- A working Anaconda Python environment
 - Mongo Atlas account (free)
 - and OpenAI API Key (paid)
-
-## Architecture
-
-![architecture](images/architecture-1.svg)
 
 ### The Fun Part
 
@@ -56,40 +53,37 @@ id: 573a1397f29313caabce61a5
 title: Logan's Run,
 year: 1976
 plot: An idyllic sci-fi future has one major drawback: life must end at 30.
-
-...
 ```
 
-Pretty cool, eh?
+Pretty cool, eh? 😎
 
-Follow these steps to get this going.
+Follow these step by step guide to get going.
 
-## Step-1: Setup Atlas
+## Overall Workshop format
 
-Follow [setup-atlas.md](setup-atlas.md)
+- **Setup** - Setup and get ready
+- **Lab-1** - Connect to Atlas and query
+- **Lab 2** - Perform vector search on existing collection, that already has embeddings populated.  We will use OpenAI API for this (You will need openAI key for this)
+- **Lab 3** - Perform vector search using custom embeddings.  For this we will use open-source models that run locally (no API calls)
 
-Also [set up index on Atlas](setup-atlas-index.md)
+## Setup
 
-## Step-2: Setup Python Environment
+### Setup 1.1 -  Setup Python Environment
 
 Follow [setup-python-env.md](setup-python-env.md)
 
-## Step-3: Check OpenAI API Access
+## Lab-1: Connect to MongoDB Atlas
 
-Run this notebook: [test-openai.ipynb](test-openai.ipynb) to verify your access key works.
+[Lab-1.md](lab-1.md)
 
-## Step-4: Query Atlas DB
 
-[query-atlas.ipynb](query-atlas.ipynb)
 
-## Step-5: Streamlit UI
+## Lab-2 - Vector Search Using OpenAI Embeddings
 
-You can fireup Streamlit UI like this:
+[lab-2.md](lab-2.md)
 
-```bash
-streamlit  run  streamlit-app.py
-```
 
-This will open a browser UI at http://localhost:8501
 
-![](images/streamlit-ui1.png)
+## Lab-3: Vector Search Using Custom Embeddings
+
+[lab-3.md](lab-3.md)
