@@ -1,14 +1,16 @@
-openai
 python-dotenv==1.0.0
 pymongo[srv]
 streamlit
 
 
-## Embeddings
+## LLMs / embeddings
+openai
 llama-index
 transformers
 torch
 sentence_transformers
+llama-cpp-python
+
 
 ## pdf handling
 PyPDF2
