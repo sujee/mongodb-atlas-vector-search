@@ -65,6 +65,7 @@ Follow these step by step guide to get going.
 - **Lab-1** - Connect to Atlas and query
 - **Lab 2** - Perform vector search on existing collection, that already has embeddings populated.  We will use OpenAI API for this (You will need openAI key for this)
 - **Lab 3** - Perform vector search using custom embeddings.  For this we will use open-source models that run locally (no API calls)
+- **Lab 4** - Using RAG to query our own documents (pdf) using openAI GPT and local LLMs
 
 ## Setup
 
@@ -87,3 +88,8 @@ Follow [setup-python-env.md](setup-python-env.md)
 ## Lab-3: Vector Search Using Custom Embeddings
 
 [lab-3.md](lab-3.md)
+
+
+## Lab-4: RAG (Retrieval Augmentation Generation)
+
+[lab-4.md](lab-4.md)
