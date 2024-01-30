@@ -87,9 +87,9 @@ Follow [setup-python-env.md](setup-python-env.md)
 
 ## Lab-3: Vector Search Using Custom Embeddings
 
-[lab-3.md](lab-3.md)
+[lab-3](lab-3-vector-search-custom/README.md)
 
 
 ## Lab-4: RAG (Retrieval Augmentation Generation)
 
-[lab-4.md](lab-4.md)
+[lab-4](lab-4-rag/README.md)
