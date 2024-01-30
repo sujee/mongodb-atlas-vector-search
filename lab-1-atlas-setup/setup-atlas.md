@@ -17,7 +17,7 @@ Login to your account
 
 ## Step-3: Load Sample Data
 
-![Alt text](images/setup-atlas-load-data.png)
+![Alt text](../images/setup-atlas-load-data.png)
 
 This may take a few minutes
 
@@ -25,7 +25,7 @@ This may take a few minutes
 
 We will use **mflix** data.  This data has movie information.
 
-![Alt text](images/mflix-1.png)
+![Alt text](../images/mflix-1.png)
 
 You can browse a few movies here.
 
@@ -35,6 +35,6 @@ This data already has vector embeddings for plots.  Embeddings are numbers or ve
 
 Inspect embedding data
 
-![Alt text](images/mflix-embeddings.png)
+![Alt text](../images/mflix-embeddings.png)
 
 ## Congrats!  Now Atlas dB is setup  👏

@@ -30,13 +30,13 @@ Use these screenshots are guidelines.
 
 **Wait till the index is ready to be used**
 
-![atlas-search-1.png](images/atlas-index-1.png)
+![atlas-search-1.png](../images//atlas-index-1.png)
 
-![atlas-search-2.png](images/atlas-index-2.png)
+![atlas-search-2.png](../images//atlas-index-2.png)
 
-![atlas-search-3.png](images/atlas-index-3.png)
+![atlas-search-3.png](../images//atlas-index-3.png)
 
-![atlas-search-4.png](images/atlas-index-4.png)
+![atlas-search-4.png](../images//atlas-index-4.png)
 
 ## Option-2: Using Code
 

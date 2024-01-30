@@ -8,7 +8,7 @@
 
 ## Data flow
 
-![architecture](images/architecture-1.svg)
+![architecture](../images//architecture-1.svg)
 
 ## Lab 2.1 - Setup Atlas Index
 
@@ -26,7 +26,7 @@ Run this notebook: [openai-test.ipynb](openai-test.ipynb) to verify your access 
 
 We have every thing we need to query Atlas!
 
-[vector-search-1a-openai.ipynb](vector-search-1a-openai.ipynb)
+[vector-search-openai.ipynb](vector-search-openai.ipynb)
 
 ## Lab 2.4 - Streamlit UI
 
@@ -35,9 +35,9 @@ Let's do a simple UI to display our movie results!
 You can fireup Streamlit UI like this:
 
 ```bash
-streamlit  run  vector-search-1b-streamlit.py
+streamlit  run  vector-search-streamlit.py
 ```
 
 This will open a browser UI at http://localhost:8501
 
-![](images/streamlit-ui1.png)
+![](../images//streamlit-ui1.png)

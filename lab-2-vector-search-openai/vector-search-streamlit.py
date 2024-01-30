@@ -1,3 +1,8 @@
+import os, sys
+this_dir = os.path.abspath('')
+parent_dir = os.path.dirname(this_dir)
+sys.path.append (os.path.abspath (parent_dir))
+
 import streamlit as st
 from AtlasClient import AtlasClient
 from OpenAIClient import OpenAIClient
@@ -58,6 +63,7 @@ def run_query (query, output_container):
   - id: {movie["_id"]}
   - title: {movie["title"]}
   - year: {movie["year"]}
+  - search_score(meta): {movie["search_score"]}
   - plot: {movie["plot"]}
 """)
             st.markdown(md_str)

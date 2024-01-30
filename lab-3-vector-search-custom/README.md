@@ -16,10 +16,10 @@ Follow this notebook: [local-embeddings-test.ipynb](local-embeddings-test.ipynb)
 
 We are going to build on the previous section of generating local embeddings.  We will actually upload the embeddings to movies collection.
 
-Follow [vector-search-2a-custom-embeddings-populate.ipynb](vector-search-2a-custom-embeddings-populate.ipynb)
+Follow [vector-search-custom-embeddings-populate.ipynb](vector-search-custom-embeddings-populate.ipynb)
 
 ## Lab 3.3 - Query using Custom Embeddings
 
 Now we have every thing ready to query using the custom embeddings we just setup!
 
-Follow [vector-search-2b-custom-embeddings-query.ipynb](vector-search-2b-custom-embeddings-query.ipynb)
+Follow [vector-search-custom-embeddings-query.ipynb](vector-search-custom-embeddings-query.ipynb)

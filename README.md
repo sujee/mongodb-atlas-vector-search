@@ -75,13 +75,13 @@ Follow [setup-python-env.md](setup-python-env.md)
 
 ## Lab-1: Connect to MongoDB Atlas
 
-[Lab-1.md](lab-1.md)
+[Lab-1](lab-1-atlas-setup/README.md)
 
 
 
 ## Lab-2 - Vector Search Using OpenAI Embeddings
 
-[lab-2.md](lab-2.md)
+[lab-2](lab-2-vector-search-openai/README.md)
 
 
 

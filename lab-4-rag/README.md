@@ -19,7 +19,14 @@ Now that the documents are in Atlas, let's ask some questions about the document
 
 Follow [rag-10k-b-query-openAI.ipynb](rag-10k-b-query-openAI.ipynb)
 
-## Lab 4.3 - Query documents using local LLMs
+## Lab 4.3 - Test run a local LLM
+
+Running this notebook to see how well you can run an LLM 
+
+[test-local-llm.ipynb](test-local-llm.ipynb)
+
+
+## Lab 4.4 - Query documents using local LLMs
 
 Let's query documents, this time using a LLM (Large Language Model) running locally on our laptop!
 
