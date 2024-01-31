@@ -50,6 +50,9 @@ This will open a browser UI at http://localhost:8501
 
 ## Sample Search Results
 
+Query : **Fatalistic sci-fi movies**
+
+Results:
 
 ```text
 title: V: The Final Battle,
