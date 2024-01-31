@@ -13,7 +13,7 @@ In this lab, we will do the following:
 
 And here is the result of sample query
 
-![](../images/rag-2.png)
+![](../images/rag-2-answer.png)
 
 ## Lab 4.1 - Upload PDFs into Atlas
 
