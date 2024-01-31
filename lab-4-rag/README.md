@@ -7,6 +7,10 @@ In this lab, we will do the following:
 👉 Upload them into Atlas
 - 👉 Then query these PDF documents
 
+## Architecture and Dataflow
+
+![](../images/rag-1.svg)
+
 ## Lab 4.1 - Upload PDFs into Atlas
 
 First step is reading, parsing, indexing PDFs.  And we will upload the documents into Atlas to query later.
