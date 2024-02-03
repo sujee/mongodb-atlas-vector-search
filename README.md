@@ -1,4 +1,4 @@
-# Vector Search Example Using Mongodb Atlas
+# Vector Search Example Using MongoDB Atlas
 
 ## About
 
