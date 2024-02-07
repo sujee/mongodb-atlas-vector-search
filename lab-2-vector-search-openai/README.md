@@ -4,7 +4,7 @@
 
 - ✅ The `embedded_movies` collection is already loaded into Atlas
 - ✅ The collection already has an embedding attribute populated using OpenAI embeddings
-- 👉 We will encode our query using OpenAI API call, and send the query to Atlas.  And get results back
+- 👉 We will encode our query using OpenAI embedding call, and send the query to Atlas.  And get results back
 
 ## Movie Data
 
@@ -20,7 +20,7 @@
 
 [set up index on Atlas](setup-atlas-index.md)
 
-## Lab 2.2 - Check OpenAI API Access
+## Lab 2.2 - (Optional) Check OpenAI API Access
 
 You will need an OpenAI API key.
 
