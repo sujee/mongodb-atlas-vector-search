@@ -78,3 +78,5 @@ docker run  -p 8501:8501 sujee/atlas-vector-search
 ```
 
 If the docker image is not locally available, it will be downloaded
+
+This will start the app.  You can access the UI here :   http://localhost:8501
