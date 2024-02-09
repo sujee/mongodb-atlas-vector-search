@@ -81,6 +81,8 @@ Index PDF files and store in Atlas with embeddings, and ask questions about the 
 
 ## Some Fun Benchmarks
 
+[Vector search results using different embedding models](benchmark-search-results.md)
+
 [Local embedding models benchmark](benchmark-embedding-models.md)
 
 [LLMs performance on RAG](benchmark-LLMs.md)
