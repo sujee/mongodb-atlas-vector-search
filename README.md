@@ -75,6 +75,10 @@ Index PDF files and store in Atlas with embeddings, and ask questions about the 
 
 [lab-4](lab-4-rag/README.md)
 
+## Dockerizing and Deploying the App
+
+[dockerize.md](dockerize.md)
+
 ## Some Fun Benchmarks
 
 [Local embedding models benchmark](benchmark-embedding-models.md)

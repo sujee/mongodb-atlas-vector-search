@@ -1,0 +1,14 @@
+python-dotenv==1.0.0
+pymongo[srv]
+streamlit
+
+
+## LLMs / embeddings
+openai
+llama-index
+transformers
+
+## For Docker, we don't want to pull in all nvidia libraries
+## they make the docker image much larger
+-f https://download.pytorch.org/whl/torch_stable.html
+torch==2.2.0+cpu
