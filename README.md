@@ -68,6 +68,12 @@ We will populate collections data with custom embeddings, using open source embe
 
 [lab-3](lab-3-vector-search-custom/README.md)
 
+### Sample streamlit app
+
+[streamlit app](lab-2-vector-search-openai/vector-search-streamlit.py)
+
+[screenshot 1](images/streamlit-ui-2.png),  [screenshot 2](images/streamlit-ui-3b.png)
+
 
 ### Lab-4: RAG (Retrieval Augmentation Generation)
 
