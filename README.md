@@ -11,10 +11,10 @@ This repo has sample code showcasing  building Vector Search / RAG (Retrieval-Au
 
 For example, let's say we are searching movie plots.
 
-- A simple **keyword search** could be searching by **'sci-fi'**
+- A simple **keyword search** could be **'sci-fi'**
 - A **vector search** could be **'where humans fight aliens'**
 
-Here is an example.  Notice how the results not mere keyword search.
+Here is an example.  Notice how the results are not merely keywords.
 
 ```text
 query : fatalistic sci-fi movies
@@ -49,7 +49,7 @@ Follow [setup-python-env.md](setup-python-env.md)
 
 ### Lab-1: Connect to MongoDB Atlas
 
-Setup Atlas on the cloud and make sure we can connect.
+Setup Atlas in the cloud and make sure we can connect to it.
 
 [Lab-1](lab-1-atlas-setup/README.md)
 
@@ -57,7 +57,7 @@ Setup Atlas on the cloud and make sure we can connect.
 
 ### Lab-2 - Vector Search Using OpenAI Embeddings
 
-Perform vector search on already indexed collection.  This collection is pre-populated with embeddings using OpenAI embedding model.
+Perform vector search on an already indexed collection.  This collection is pre-populated with embeddings using an OpenAI embedding model.
 
 [lab-2](lab-2-vector-search-openai/README.md)
 
@@ -77,7 +77,7 @@ We will populate collections data with custom embeddings, using open source embe
 
 ### Lab-4: RAG (Retrieval Augmentation Generation)
 
-Index PDF files and store in Atlas with embeddings, and ask questions about the documents using LLMs
+Index PDF files and store the index in Atlas with embeddings, and ask questions about the documents using LLMs
 
 [lab-4](lab-4-rag/README.md)
 
