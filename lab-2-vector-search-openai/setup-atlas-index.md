@@ -20,7 +20,7 @@ Index name: `idx_plot_embedding`
       "type": "vector",
       "path": "plot_embedding",
       "numDimensions": 1536,
-      "similarity": "euclidean"
+      "similarity": "dotProduct"
     }
   ]
 }

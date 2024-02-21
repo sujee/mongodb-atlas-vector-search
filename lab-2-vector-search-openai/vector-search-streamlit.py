@@ -12,6 +12,7 @@ from urllib.request import urlopen
 import time
 import json
 from llama_index.embeddings import HuggingFaceEmbedding
+import re
 
 
 DB_NAME = 'sample_mflix'
@@ -60,19 +61,27 @@ atlas_client, openAI_client, cached_embeddings_openai  = initialize()
 lookup_table = {
     'OpenAI' : {'attribute' : 'plot_embedding',  'index_name': 'idx_plot_embedding'},
     'BAAI/bge-small-en-v1.5' : {'attribute' : 'plot_embedding_bge_small',  'index_name': 'idx_plot_embedding_bge_small'},
+    'BAAI/bge-large-en-v1.5' : {'attribute' : 'plot_embedding_bge_large',  'index_name': 'idx_plot_embedding_bge_large'},
 }
+
+def clean_string(string : str) -> str:
+    string = string.lower().strip()
+    string = re.sub(r'\s+', ' ', string).strip()  #consolidate into single space
+    return re.sub(r'[^a-zA-Z0-9\s]', '', string).strip()
 
 ## ---------------------------
 def get_embeddings (text : str, embeddding_model : str) -> list[float]:
     if embeddding_model == 'OpenAI':
         if text in cached_embeddings_openai.keys():
-            st.write ("using cached embeddings for OpenAI")
+            st.write ("using cached OpenAI embeddings")
             embedding = cached_embeddings_openai.get (text)
         else:
             t1a = time.perf_counter()
             embedding = openAI_client.get_embedding(text)
             t1b = time.perf_counter()
             st.write (f"Got embeddings from openAI API in {(t1b-t1a)*1000:,.0f} ms")
+            ## save it in cache
+            session_state['cached_embeddings_openai'][text] = embedding
     else:
         hf_embed_model = HuggingFaceEmbedding(model_name=embeddding_model)
         embedding = hf_embed_model.get_text_embedding(text)
@@ -84,9 +93,7 @@ def run_query (query, selected_embedding, output_container):
     output_container.empty()
 
     with output_container.container():
-
-        query = query.lower().strip()
-        st.write (f'running query : {query}')
+        st.write (f"running query : '{query}'")
         attr_name = lookup_table[selected_embedding]['attribute']
         index_name = lookup_table[selected_embedding]['index_name']
         st.write (f"selected embedding model : {selected_embedding}")
@@ -105,14 +112,18 @@ def run_query (query, selected_embedding, output_container):
             md_str =  (f"""
 - Movie {idx+1}
   - id: {movie["_id"]}
-  - title: {movie["title"]}
+  - title: **{movie["title"]}**
   - year: {movie["year"]}
-  - search_score(meta): {movie["search_score"]}
-  - plot: {movie["plot"]}
+  - search_score: **{movie["search_score"]:,.2f}**
+  - plot: *{movie["plot"]}*
 """)
             st.markdown(md_str)
 ## ---------------------------
 
+
+## we are going to cache openai calls here
+session_state = st.session_state
+session_state['cached_embeddings_openai'] = cached_embeddings_openai
 
 
 ## Process queries
@@ -130,12 +141,14 @@ st.markdown("""Here are some sample queries you can try...
 """)
 
 
-selected_embedding = st.selectbox("Select embedding model", ["OpenAI", "BAAI/bge-small-en-v1.5" ])
+selected_embedding = st.selectbox("Select embedding model", ["OpenAI",
+                                                             # "BAAI/bge-large-en-v1.5",
+                                                             "BAAI/bge-small-en-v1.5" ])
 query_text = st.text_input("Movie query:")
 
 # if 'Select embedding model' not in st.session_state:
 #     st.session_state['Select embedding model'] = []
 output_container = st.empty()
-
+query_text = clean_string (query_text)
 if query_text:
     run_query (query_text, selected_embedding, output_container)
