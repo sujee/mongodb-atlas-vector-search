@@ -72,7 +72,7 @@ We will populate collections data with custom embeddings, using open source embe
 
 [streamlit app](lab-2-vector-search-openai/vector-search-streamlit.py)
 
-[screenshot 1](images/streamlit-ui-2.png),  [screenshot 2](images/streamlit-ui-3b.png)
+[screencast](https://drive.google.com/file/d/1pwuglLA7GTKqVlJSG-Tg-xubse6h0YP5/view?usp=drive_link) | [screenshot 1](images/streamlit-ui-2.png) | [screenshot 2](images/streamlit-ui-3b.png)
 
 
 ### Lab-4: RAG (Retrieval Augmentation Generation)

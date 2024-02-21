@@ -56,6 +56,9 @@ docker tag atlas-vector-search USERNAME/atlas-vector-search
 # for example I would do  with my dockerhub username 'sujee'
 docker tag atlas-vector-search  sujee/atlas-vector-search
 
+# to add versioning
+docker tag atlas-vector-search  sujee/atlas-vector-search:v-02
+
 # push
 docker push USERNAME/atlas-vector-search
 docker push sujee/atlas-vector-search

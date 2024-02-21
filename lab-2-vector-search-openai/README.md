@@ -46,7 +46,11 @@ streamlit  run  vector-search-streamlit.py
 
 This will open a browser UI at http://localhost:8501
 
-![](../images//streamlit-ui1.png)
+[screencast](https://drive.google.com/file/d/1pwuglLA7GTKqVlJSG-Tg-xubse6h0YP5/view?usp=drive_link) 
+
+![screenshot 1](../images/streamlit-ui-2.png) 
+
+![screenshot 2](../images/streamlit-ui-3b.png)
 
 ## Sample Search Results
 
