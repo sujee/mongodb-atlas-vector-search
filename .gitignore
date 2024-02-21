@@ -5,3 +5,5 @@ llama-index-cache/
 models
 
 
+
+tmp/
