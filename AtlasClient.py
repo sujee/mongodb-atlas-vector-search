@@ -6,6 +6,10 @@ class AtlasClient ():
         self.mongodb_client = MongoClient(altas_uri)
         self.database = self.mongodb_client[dbname]
 
+    ## A quick way to test if we can connect to Atlas instance
+    def ping (self):
+        self.mongodb_client.admin.command('ping')
+
     def get_collection (self, collection_name):
         collection = self.database[collection_name]
         return collection
