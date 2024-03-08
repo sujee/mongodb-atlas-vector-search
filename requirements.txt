@@ -1,20 +1,22 @@
+## Versions are pinned for reliability
+
 python-dotenv==1.0.0
-pymongo[srv]
-streamlit
+pymongo[srv]==4.6.2
+streamlit==1.32.0
 
 
 ## LLMs / embeddings
-openai
-llama-index
-transformers
-torch
-sentence_transformers
-llama-cpp-python
+openai==1.13.3
+llama-index==0.10.17
+transformers==4.38.2
+sentence_transformers==2.5.1
+torch==2.2.1
+llama-cpp-python==0.2.55
 
 
 ## pdf handling
-PyPDF2
-pypdf
+PyPDF2==3.0.1
+pypdf==4.1.0
 
 ## Utils
 ipykernel
