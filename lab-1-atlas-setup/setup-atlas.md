@@ -12,12 +12,13 @@ Login to your account
 - Choose 'FREE' tier
 - Follow the guide.
 - Note your username and password to connect to the instance
-- Also **add your public-ip to acces list**.  This is necessary to accesss the cluster
+- For IP access list, add `0.0.0.0/0` .  This makes it available to test from Google Colab. (Note: this makes the instance available from any IP address)
+
 
 
 ## Step-3: Load Sample Data
 
-![Alt text](../images/setup-atlas-load-data.png)
+![Alt text](../images/atlas-setup-load-data-1.png)
 
 This may take a few minutes
 
@@ -25,16 +26,18 @@ This may take a few minutes
 
 We will use **mflix** data.  This data has movie information.
 
+Use Atlas UI to browse data.
+
 ![Alt text](../images/mflix-1.png)
 
-You can browse a few movies here.
+![Alt text](../images/mflix-embeddings.png)
+
 
 ## Step-5: Inspect Embeddings
 
 This data already has vector embeddings for plots.  Embeddings are numbers or vectors.
 
-Inspect embedding data
+More on this later...
 
-![Alt text](../images/mflix-embeddings.png)
 
 ## Congrats!  Now Atlas dB is setup  👏

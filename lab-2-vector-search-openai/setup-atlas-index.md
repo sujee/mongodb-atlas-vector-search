@@ -34,7 +34,7 @@ Use these screenshots are guidelines.
 
 ![atlas-search-2.png](../images//atlas-index-2.png)
 
-![atlas-search-3.png](../images//atlas-index-3.png)
+![atlas-search-3.png](../images//atlas-index-3a.png)
 
 ![atlas-search-4.png](../images//atlas-index-4.png)
 

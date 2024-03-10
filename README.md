@@ -92,3 +92,8 @@ Index PDF files and store the index in Atlas with embeddings, and ask questions 
 [Local embedding models benchmark](benchmark-embedding-models.md)
 
 [LLMs performance on RAG](benchmark-LLMs.md)
+
+
+## Useful Resources
+
+- [RAG Series Part 1: How to Choose the Right Embedding Model for Your Application](https://www.mongodb.com/developer/products/atlas/choose-embedding-model-rag/) by Apoorva Joshi
