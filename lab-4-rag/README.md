@@ -36,7 +36,7 @@ These are some of the embedding options:
 - 4.1 C) **Local / embedding models**
     - Models will run locally
     - Medium to large models will benefit from GPU
-    - See notebook: [rag-10k-a-populate-embeddings-local.ipynb(rag-10k-a-populate-embeddings-local.ipynb)]
+    - See notebook: [rag-10k-a-populate-embeddings-local.ipynb](rag-10k-a-populate-embeddings-local.ipynb)
 
 ## Lab 4.2 - Query documents using OpenAI LLM (ChatGPT)
 
