@@ -7,16 +7,12 @@ streamlit==1.32.0
 
 
 ## LLMs / embeddings
-openai
-llama-index
-llama-index-embeddings-huggingface
-llama-index-embeddings-openai
-llama-index-embeddings-mistralai
-llama-index-vector-stores-mongodb
+openai==1.13.3
+llama-index==0.10.17
 transformers==4.38.2
 sentence_transformers==2.5.1
 torch==2.2.1
-llama-cpp-python
+llama-cpp-python==0.2.55
 
 
 ## pdf handling

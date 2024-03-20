@@ -28,16 +28,25 @@ We will use **mflix** data.  This data has movie information.
 
 Use Atlas UI to browse data.
 
-![Alt text](../images/mflix-1.png)
+![Alt text](../images/mflix-1b.png)
 
 ![Alt text](../images/mflix-embeddings.png)
 
 
-## Step-5: Inspect Embeddings
+## Step-5: Allow Network Access
 
-This data already has vector embeddings for plots.  Embeddings are numbers or vectors.
+For easy access of Atlas from anywhere (from your local machine, Google Colab ..etc), allow network connections from anywhere.
 
-More on this later...
+Follow these steps:
+
+- Go to **Network access**
+- Select **Add IP Address**
+- Choose **Allow access from anywhere**
+- See screenshot below
+
+**Note: Doing this opens up Atlas from connections anywhere.  It is not recommended for production setups!**
+
+![](../images/atlas-connect-2.png)
 
 
-## Congrats!  Now Atlas dB is setup  👏
+## Congrats!  Now Atlas is setup  👏
