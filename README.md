@@ -1,4 +1,4 @@
-# Vector Search Example Using MongoDB Atlas
+# Vector Search and RAG Using MongoDB Atlas + Embedding Models +  LLMs
 
 ## About
 

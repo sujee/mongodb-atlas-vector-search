@@ -25,24 +25,38 @@ And the documents along with embeddings will be uploaded into Atlas to query lat
 
 These are some of the embedding options:
 
-- 4.1 A) **OpenAI** embedding model - TODO
-    - API based access
-    - will need an OPENAI API key
-    - See notebook : [rag-10k-a-populate-embeddings-openai.ipynb](rag-10k-a-populate-embeddings-openai.ipynb) (TODO)
-- 4.1 B) **Mistral AI embedding model**.
-    - API based access
-    - Will need MISTRAL API key
-    - See notebook [rag-10k-a-populate-embeddings-mistral.ipynb](rag-10k-a-populate-embeddings-mistral.ipynb)
-- 4.1 C) **Local / embedding models**
-    - Models will run locally
-    - Medium to large models will benefit from GPU
-    - See notebook: [rag-10k-a-populate-embeddings-local.ipynb](rag-10k-a-populate-embeddings-local.ipynb)
+### 4.1 A: OpenAI embedding model - TODO
 
-## Lab 4.2 - Query documents using OpenAI LLM (ChatGPT)
+- API based access
+- will need an OPENAI API key
+- See notebook : [rag-10k-a-populate-embeddings-openai.ipynb](rag-10k-a-populate-embeddings-openai.ipynb) (TODO)
 
-Now that the documents are in Atlas, let's ask some questions about the documents.  Our LLM here will be OpenAI Chat GPT
+### 4.1 B: Mistral AI embedding model
 
-Follow [rag-10k-b-query-openAI.ipynb](rag-10k-b-query-openAI.ipynb)
+- API based access
+- Will need MISTRAL API key
+- See notebook [rag-10k-a-populate-embeddings-mistral.ipynb](rag-10k-a-populate-embeddings-mistral.ipynb)
+
+### 4.1 C: Open source embedding models
+
+- Models will run locally
+- Medium to large models will benefit from GPU
+- See notebook: [rag-10k-a-populate-embeddings-open.ipynb](rag-10k-a-populate-embeddings-open.ipynb)
+
+## Lab 4.2 - Query documents using LLM
+
+Now that the documents are in Atlas, let's ask some questions about the documents.
+
+Here we can have a combination of **embedding models** and **LLM**.  See below for some examples
+
+| Embedding model                  | LLM                      | Code                                                                                                         |
+|----------------------------------|--------------------------|--------------------------------------------------------------------------------------------------------------|
+| OpenAI embed (access via API)    | OpenAI (access via API)  | TODO                                                                                                         |
+| Open source model (runs locally) | OpenAI (access via API)  | [rag-10k-b-query-open-embeddings-openAI-llm.ipynb](rag-10k-b-query-open-embeddings-openAI-llm.ipynb)         |
+|                                  |                          |                                                                                                              |
+| Mistral embed (access via API)   | Mistral (access via API) | [rag-10k-b-query-mistral-embeddings-mistral-llm.ipynb](rag-10k-b-query-mistral-embeddings-mistral-llm.ipynb) |
+| Open source model (runs locally) | Mistral (access via API) | [rag-10k-b-query-open-embeddings-mistral-llm.ipynb](rag-10k-b-query-open-embeddings-mistral-llm.ipynb)       |
+
 
 ## Lab 4.3 - Test run a local LLM
 
