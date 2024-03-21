@@ -13,7 +13,7 @@ Here is an overview of RAG workflow
 ![](images/rag-overview-2.png)
 
 
-See below for handy references
+See below for [handy references](#handy-references)
 
 ## What do you need to run this workshop?
 
