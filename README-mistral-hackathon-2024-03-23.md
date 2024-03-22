@@ -12,7 +12,7 @@ This workshop will demonstrate how to develop a RAG application of querying PDF 
 
 Here is an overview of RAG workflow
 
-![](images/rag-overview-2.png)
+![](images/rag-overview-3-mistral.png)
 
 
 See below for [handy references](#handy-references)
