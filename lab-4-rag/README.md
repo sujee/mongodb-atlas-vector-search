@@ -9,7 +9,7 @@ In this lab, we will do the following:
 
 ## Architecture and Dataflow
 
-![](../images/rag-1.svg)
+![](../images/rag-overview-2.png)
 
 And here is the result of sample query
 

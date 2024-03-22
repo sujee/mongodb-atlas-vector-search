@@ -8,6 +8,8 @@ This workshop will demonstrate how to develop a RAG application of querying PDF 
 * Mistral as embedding model
 * Mistral as LLM
 
+(This workshop is part of workshop collection covering vector search, embeddings and LLMs.  You can see the all workshops in [README.md](README.md))
+
 Here is an overview of RAG workflow
 
 ![](images/rag-overview-2.png)
@@ -20,6 +22,14 @@ See below for [handy references](#handy-references)
 * A (free) MongoDB Atlas account;  Sign up here : https://www.mongodb.com/cloud/atlas/register
 * A Mistral API key; Get it here: https://console.mistral.ai/
 * A Jupyter notebook environment.  [Google Colab](https://colab.research.google.com/) (recommended) or a Python dev environment.
+
+## Understanding LLM and Vector Store!
+
+    "Vector stores reduce search space by providing relevant documents to LLM"
+
+A simple way to think about this is a librarian helping out a student by giving relevant books (click for larger image)
+
+<a href="images/LLM-and-vector-storage.jpeg"><img src="images/LLM-and-vector-storage.jpeg" width="40%"></a>
 
 ## Step-1: Setup Atlas
 
@@ -35,19 +45,12 @@ Very importantly we will also calculate **embeddings** for the documents.
 
 And the documents along with embeddings will be stored in Atlas to query later.
 
-These are some of the embedding options:
+| Embedding model | Embedding size       | details                                | Code                                                                                                 |
+|-----------------|----------------------|----------------------------------------|------------------------------------------------------------------------------------------------------|
+| Mistral         | 1024                 | API access (will need MISTRAL API KEY) | [rag-10k-a-populate-embeddings-mistral.ipynb](lab-4-rag/rag-10k-a-populate-embeddings-mistral.ipynb) |
+| Open (various)  | varies (384 to 1024) | Runs locally                           | [rag-10k-a-populate-embeddings-open.ipynb](lab-4-rag/rag-10k-a-populate-embeddings-open.ipynb)       |
 
-### A: Mistral AI embedding model
 
-- API based access
-- Will need MISTRAL API key
-- See notebook [rag-10k-a-populate-embeddings-mistral.ipynb](lab-4-rag/rag-10k-a-populate-embeddings-mistral.ipynb)
-
-### B: Open source embedding models
-
-- Models will run locally
-- Medium to large models will benefit from GPU
-- See notebook: [rag-10k-a-populate-embeddings-open.ipynb](lab-4-rag/rag-10k-a-populate-embeddings-open.ipynb)
 
 ## Step-3: Query Documents with LLM
 
@@ -61,6 +64,10 @@ Here we can have a combination of **embedding models** and **LLM**.  See below f
 | Open source model (runs locally) | Mistral (access via API) | [rag-10k-b-query-open-embeddings-mistral-llm.ipynb](lab-4-rag/rag-10k-b-query-open-embeddings-mistral-llm.ipynb)       |
 
 ## Extra: Run local LLM
+
+| Embedding model                  | LLM                                    | Code                                                                         |
+|----------------------------------|----------------------------------------|------------------------------------------------------------------------------|
+| Open source model (runs locally) | Mistral-Instruct-7B-v02 (runs locally) | [rag-10k-c-query-local-llm.ipynb](lab-4-rag/rag-10k-c-query-local-llm.ipynb) |
 
 This [notebook](lab-4-rag/rag-10k-c-query-local-llm.ipynb) demonstrates how to run [Mistral instruct 7b 0.2 model](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) locally
 
