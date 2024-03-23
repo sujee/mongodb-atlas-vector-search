@@ -1,5 +1,7 @@
 # Readme for Mistral Hackathon (2024-03-23)
 
+## shortlink: bit.ly/mongodb-mistral
+
 ## Overview
 
 This workshop will demonstrate how to develop a RAG application of querying PDF documents using:
