@@ -10,7 +10,7 @@ This workshop will demonstrate how to develop a RAG application of querying PDF 
 
 (This workshop is part of workshop collection covering vector search, embeddings and LLMs.  You can access all the workshops in [README.md](README.md))
 
-[slides](https://docs.google.com/presentation/d/1lzaZMlu_2m8juuav-Jo7z_fFVifGhTXROvxQdIPZScE/edit?usp=sharing)
+Slide: [1](https://docs.google.com/presentation/d/1-lJ9azv1AVbTnFLEj6TgJgq7pOUBMiLVjSDrMz50PiQ/edit?usp=sharing) |  [2](https://docs.google.com/presentation/d/1lzaZMlu_2m8juuav-Jo7z_fFVifGhTXROvxQdIPZScE/edit?usp=sharing)
 
 Here is an overview of RAG workflow
 
