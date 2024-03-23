@@ -25,23 +25,11 @@ And the documents along with embeddings will be uploaded into Atlas to query lat
 
 These are some of the embedding options:
 
-### 4.1 A: OpenAI embedding model - TODO
-
-- API based access
-- will need an OPENAI API key
-- See notebook : [rag-10k-a-populate-embeddings-openai.ipynb](rag-10k-a-populate-embeddings-openai.ipynb) (TODO)
-
-### 4.1 B: Mistral AI embedding model
-
-- API based access
-- Will need MISTRAL API key
-- See notebook [rag-10k-a-populate-embeddings-mistral.ipynb](rag-10k-a-populate-embeddings-mistral.ipynb)
-
-### 4.1 C: Open source embedding models
-
-- Models will run locally
-- Medium to large models will benefit from GPU
-- See notebook: [rag-10k-a-populate-embeddings-open.ipynb](rag-10k-a-populate-embeddings-open.ipynb)
+| Embedding model | Embedding size       | details                                | Code                                                                                                 |
+|-----------------|----------------------|----------------------------------------|------------------------------------------------------------------------------------------------------|
+| OpenAI          | varies               | API access (will need OPENAI API KEY)  | TODO                                                                                                 |
+| Mistral         | 1024                 | API access (will need MISTRAL API KEY) | [rag-10k-a-populate-embeddings-mistral.ipynb](lab-4-rag/rag-10k-a-populate-embeddings-mistral.ipynb) |
+| Open (various)  | varies (384 to 1024) | Runs locally                           | [rag-10k-a-populate-embeddings-open.ipynb](lab-4-rag/rag-10k-a-populate-embeddings-open.ipynb)       |
 
 ## Lab 4.2 - Query documents using LLM
 
@@ -62,7 +50,9 @@ Here we can have a combination of **embedding models** and **LLM**.  See below f
 
 Running this notebook to see how well you can run an LLM 
 
-[test-local-llm.ipynb](test-local-llm.ipynb)
+Using llama-cpp API: [test-local-llm-llama-cpp.ipynb](test-local-llm-llama-cpp.ipynb)
+
+Using llama-index API: [test-local-llm-llama-index.ipynb](test-local-llm-llama-index.ipynb)
 
 
 ## Lab 4.4 - Query documents using local LLMs
