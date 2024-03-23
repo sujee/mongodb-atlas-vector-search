@@ -8,7 +8,9 @@ This workshop will demonstrate how to develop a RAG application of querying PDF 
 * Mistral as embedding model
 * Mistral as LLM
 
-(This workshop is part of workshop collection covering vector search, embeddings and LLMs.  You can see the all workshops in [README.md](README.md))
+(This workshop is part of workshop collection covering vector search, embeddings and LLMs.  You can access all the workshops in [README.md](README.md))
+
+[slides](https://docs.google.com/presentation/d/1lzaZMlu_2m8juuav-Jo7z_fFVifGhTXROvxQdIPZScE/edit?usp=sharing)
 
 Here is an overview of RAG workflow
 
@@ -65,11 +67,12 @@ Here we can have a combination of **embedding models** and **LLM**.  See below f
 
 ## Extra: Run local LLM
 
+This notebook demonstrates how to run [Mistral instruct 7b 0.2 model](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) locally
+
 | Embedding model                  | LLM                                    | Code                                                                         |
 |----------------------------------|----------------------------------------|------------------------------------------------------------------------------|
 | Open source model (runs locally) | Mistral-Instruct-7B-v02 (runs locally) | [rag-10k-c-query-local-llm.ipynb](lab-4-rag/rag-10k-c-query-local-llm.ipynb) |
 
-This [notebook](lab-4-rag/rag-10k-c-query-local-llm.ipynb) demonstrates how to run [Mistral instruct 7b 0.2 model](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) locally
 
 ## Extra 2: Try other labs
 
