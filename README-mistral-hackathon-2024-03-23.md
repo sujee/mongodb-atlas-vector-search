@@ -76,12 +76,12 @@ This notebook demonstrates how to run [Mistral instruct 7b 0.2 model](https://hu
 
 ### Benchmark: CPU vs. GPU
 
-| | Mistral API          | Mistral 7B on GPU                                                                                 | Mistral 7B on CPU                                                                                            |
-|---------------|----------------------|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| Response time | 2 - 7 seconds        | 2 - 5 secs                                                                                        | 90 - 150 secs                                                                                                |
-| Model         | Mistral-large-latest | mistral-7b-instruct-v0.2.Q4_K_M.gguf                                                              | mistral-7b-instruct-v0.2.Q4_K_M.gguf                                                                         |
-| Performance   |                      | ~ 50 tokens / sec                                                                                 | ~ 5 tokens / sec                                                                                             |
-| Hardware      |                      | - Ubuntu Linux 22.04 <br><br>- 16 core CPU <br><br>- 32 G Memory <br><br>- Nvidia 2070 8GB memory | - Ubuntu Linux 22.04 <br><br>- 16 core CPU <br><br>- 32 G Memory <br><br>- Nvidia 2070 8GB memory (disabled) |
+| LLM           | Mistral API          | Mistral 7B on GPU                                                                    | Mistral 7B on CPU                                                                             |
+|---------------|----------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| Response time | 2 - 7 seconds        | 2 - 5 secs                                                                           | 90 - 150 secs                                                                                 |
+| Model         | Mistral-large-latest | mistral-7b-instruct-v0.2.Q4_K_M.gguf                                                 | mistral-7b-instruct-v0.2.Q4_K_M.gguf                                                          |
+| Performance   |                      | ~ 50 tokens / sec                                                                    | ~ 5 tokens / sec                                                                              |
+| Hardware      |                      | - Ubuntu Linux 22.04<br>- 16 core CPU <br>- 32 G Memory <br>- Nvidia 2070 8GB memory | - Ubuntu Linux 22.04<br>- 16 core CPU<br>- 32 G Memory<br>- Nvidia 2070 8GB memory (disabled) |
 
 
 ## Extra 2: Try other labs
