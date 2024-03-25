@@ -4,8 +4,8 @@ In this lab, we will do the following:
 
 - 👉 Load PDF documents
 - 👉 Use embedding models to calculate embeddings for PDF documents
-👉 Upload them into Atlas
-- 👉 Then query these PDF documents
+- 👉 Upload them into Atlas
+- 👉 Then query these PDF documents using LLMs
 
 ## Architecture and Dataflow
 
@@ -48,6 +48,7 @@ Here we can have a combination of **embedding models** and **LLM**.  See below f
 
 ## Lab 4.3 - Test run a local LLM
 
+
 Running this notebook to see how well you can run an LLM 
 
 Using llama-cpp API: [test-local-llm-llama-cpp.ipynb](test-local-llm-llama-cpp.ipynb)
@@ -59,4 +60,18 @@ Using llama-index API: [test-local-llm-llama-index.ipynb](test-local-llm-llama-i
 
 Let's query documents, this time using a LLM (Large Language Model) running locally on our laptop!
 
-Follow [rag-10k-c-query-local-llm.ipynb](rag-10k-c-query-local-llm.ipynb)
+This notebook demonstrates how to run [Mistral instruct 7b 0.2 model](https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2) locally
+
+| Embedding model                  | LLM                                    | Code                                                                         |
+|----------------------------------|----------------------------------------|------------------------------------------------------------------------------|
+| Open source model (runs locally) | Mistral-Instruct-7B-v02 (runs locally) | [rag-10k-c-query-local-llm-mistral-instruct-1.ipynb](lab-4-rag/rag-10k-c-query-local-llm-mistral-instruct-1.ipynb) |
+
+
+### Benchmark: CPU vs. GPU
+
+| LLM           | Mistral API          | Mistral 7B on GPU                                                                         | Mistral 7B on CPU                                                                                  |
+|---------------|----------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| Response time | 2 - 7 seconds        | 2 - 5 secs                                                                                | 90 - 150 secs                                                                                      |
+| Model         | Mistral-large-latest | mistral-7b-instruct-v0.2.Q4_K_M.gguf                                                      | mistral-7b-instruct-v0.2.Q4_K_M.gguf                                                               |
+| Performance   |                      | ~ 50 tokens / sec                                                                         | ~ 5 tokens / sec                                                                                   |
+| Hardware      |                      | - Ubuntu Linux 22.04<br>- 16 core CPU <br>- 32 G Memory <br>- Nvidia 2070 with 8GB memory | - Ubuntu Linux 22.04<br>- 16 core CPU<br>- 32 G Memory<br>- Nvidia 2070 with 8GB memory (disabled) |

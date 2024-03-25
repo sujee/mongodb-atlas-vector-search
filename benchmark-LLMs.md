@@ -11,7 +11,7 @@ I measured timings to various questions I asked here (both LLMs got same questio
 
 Using OpenAI : [lab-4-rag/rag-10k-b-query-openAI.ipynb](lab-4-rag/rag-10k-b-query-openAI.ipynb)
 
-Using local LLM : [lab-4-rag/rag-10k-c-query-local-llm.ipynb](lab-4-rag/rag-10k-c-query-local-llm.ipynb)
+Using local LLM : [lab-4-rag/rag-10k-c-query-local-llm-mistral-instruct-1.ipynb](lab-4-rag/rag-10k-c-query-local-llm-mistral-instruct-1.ipynb)
 
 My Local LLM:
 

@@ -73,7 +73,7 @@ This notebook demonstrates how to run [Mistral instruct 7b 0.2 model](https://hu
 
 | Embedding model                  | LLM                                    | Code                                                                         |
 |----------------------------------|----------------------------------------|------------------------------------------------------------------------------|
-| Open source model (runs locally) | Mistral-Instruct-7B-v02 (runs locally) | [rag-10k-c-query-local-llm.ipynb](lab-4-rag/rag-10k-c-query-local-llm.ipynb) |
+| Open source model (runs locally) | Mistral-Instruct-7B-v02 (runs locally) | [rag-10k-c-query-local-llm-mistral-instruct-1.ipynb](lab-4-rag/rag-10k-c-query-local-llm-mistral-instruct-1.ipynb) |
 
 
 ### Benchmark: CPU vs. GPU
