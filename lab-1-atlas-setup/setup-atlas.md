@@ -30,7 +30,7 @@ Use Atlas UI to browse data.
 
 ![Alt text](../images/mflix-1b.png)
 
-![Alt text](../images/mflix-embeddings.png)
+![Alt text](../images/mflix-embeddings-1.png)
 
 
 ## Step-5: Allow Network Access
