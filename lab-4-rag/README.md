@@ -28,8 +28,8 @@ These are some of the embedding options:
 | Embedding model | Embedding size       | details                                | Code                                                                                                 |
 |-----------------|----------------------|----------------------------------------|------------------------------------------------------------------------------------------------------|
 | OpenAI          | varies               | API access (will need OPENAI API KEY)  | TODO                                                                                                 |
-| Mistral         | 1024                 | API access (will need MISTRAL API KEY) | [rag-10k-a-populate-embeddings-mistral.ipynb](lab-4-rag/rag-10k-a-populate-embeddings-mistral.ipynb) |
-| Open (various)  | varies (384 to 1024) | Runs locally                           | [rag-10k-a-populate-embeddings-open.ipynb](lab-4-rag/rag-10k-a-populate-embeddings-open.ipynb)       |
+| Mistral         | 1024                 | API access (will need MISTRAL API KEY) | [rag-10k-a-populate-embeddings-mistral.ipynb](rag-10k-a-populate-embeddings-mistral.ipynb) |
+| Open (various)  | varies (384 to 1024) | Runs locally                           | [rag-10k-a-populate-embeddings-open.ipynb](rag-10k-a-populate-embeddings-open.ipynb)       |
 
 ## Lab 4.2 - Query documents using LLM
 
@@ -64,7 +64,7 @@ This notebook demonstrates how to run [Mistral instruct 7b 0.2 model](https://hu
 
 | Embedding model                  | LLM                                    | Code                                                                         |
 |----------------------------------|----------------------------------------|------------------------------------------------------------------------------|
-| Open source model (runs locally) | Mistral-Instruct-7B-v02 (runs locally) | [rag-10k-c-query-local-llm-mistral-instruct-1.ipynb](lab-4-rag/rag-10k-c-query-local-llm-mistral-instruct-1.ipynb) |
+| Open source model (runs locally) | Mistral-Instruct-7B-v02 (runs locally) | [rag-10k-c-query-local-llm-mistral-instruct-1.ipynb](rag-10k-c-query-local-llm-mistral-instruct-1.ipynb) |
 
 
 ### Benchmark: CPU vs. GPU
